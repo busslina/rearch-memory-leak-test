@@ -14,7 +14,7 @@ void Function() startClientAppCapsule(CapsuleHandle use) {
   final startPeriodicApiPolling = use(_startPeriodicApiPollingCapsule);
 
   return () {
-    print('Server -- PID: $pid');
+    print('Client -- PID: $pid');
     startPeriodicApiPolling();
   };
 }
