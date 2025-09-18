@@ -56,7 +56,7 @@ List<String> _characterIdsCapsule(CapsuleHandle use) {
 }
 
 // -----------------------------------------------------------------------------
-//                  03. Fetch all characters
+//                  04. Fetch all characters
 // -----------------------------------------------------------------------------
 Future<Iterable<Character>> Function() _fetchAllCharactersCapsule(
   CapsuleHandle use,
@@ -89,7 +89,7 @@ Future<Iterable<Character>> Function() _fetchAllCharactersCapsule(
 }
 
 // -----------------------------------------------------------------------------
-//                  04. Fetch character
+//                  05. Fetch character
 // -----------------------------------------------------------------------------
 Future<Character?> Function(String) _fetchCharacterCapsule(CapsuleHandle use) {
   final httpClient = use(_httpClientCapsule);
@@ -110,7 +110,7 @@ Future<Character?> Function(String) _fetchCharacterCapsule(CapsuleHandle use) {
 }
 
 // -----------------------------------------------------------------------------
-//                  05. Other
+//                  06. Other
 // -----------------------------------------------------------------------------
 Pool _apiFetchPoolCapsule(CapsuleHandle use) => Pool(5);
 
