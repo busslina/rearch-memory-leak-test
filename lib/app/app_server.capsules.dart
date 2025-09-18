@@ -47,7 +47,9 @@ _mockCharacterByIdHttpHandlerCapsule(CapsuleHandle use) {
   final generateMockCharacterById = use(_generateMockCharacterByIdCapsule);
 
   return (req, id) async {
+    // Delay
     await Future.delayed(const Duration(milliseconds: 750));
+
     return Response.ok(
       jsonEncode(generateMockCharacterById(id).toJson()),
       headers: {'Content-Type': 'text/json'},
